@@ -7,11 +7,10 @@
 # print("Sum of all numbers is: ", sum)
 
 
-# Search Word in text
 
+# Search Word in text
 text = input("Enter Text: ")
 word = input("Enter keyword: ")
-
 
 def search(text, word):
     if word in text:
@@ -19,7 +18,4 @@ def search(text, word):
     else:
         print("Word not found")
 
-
 search(text, word)
-
-#test
