@@ -25,8 +25,9 @@
 #FizzBuzz
 n = int(input("Enter the number for FizzBuzz: "))
 for x in range(1, n):
-    n = -1
-    if x % 3 == 0 and x % 5 == 0:
+    if x % 2 == 0:
+        continue
+    elif x % 3 == 0 and x % 5 == 0:
         print("SoloLearn")
     elif x % 3 == 0:
         print("Solo")
