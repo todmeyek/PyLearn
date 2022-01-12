@@ -35,10 +35,20 @@
 ########################################################
 
 # Read content from file and then return book codes(First char of title + lenght)
-file = open("D:\Mokslai\GitHub\PyLearn\Movies.txt", "r")
-# cont = file.read
-for line in file:
-    line = line.strip("\n")
-    ch = len(line)
-    print(line[0] + str(ch))
-file.close()
+# file = open("D:\Mokslai\GitHub\PyLearn\Movies.txt", "r")
+# # cont = file.read
+# for line in file:
+#     line = line.strip("\n")
+#     ch = len(line)
+#     print(line[0] + str(ch))
+# file.close()
+
+num = int(input("Enter number for fib: "))
+
+def fib(n):
+    for n in range (0, n+1, 1):
+        sum = n
+
+        print(sum)
+        
+fib(num)
