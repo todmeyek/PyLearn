@@ -35,10 +35,16 @@
 ########################################################
 
 # Read content from file and then return book codes(First char of title + lenght)
-file = open("D:\Mokslai\GitHub\PyLearn\Movies.txt", "r")
-# cont = file.read
-for line in file:
-    line = line.strip("\n")
-    ch = len(line)
-    print(line[0] + str(ch))
-file.close()
+# file = open("D:\Mokslai\GitHub\PyLearn\Movies.txt", "r")
+# # cont = file.read
+# for line in file:
+#     line = line.strip("\n")
+#     ch = len(line)
+#     print(line[0] + str(ch))
+# file.close()
+
+N = int(input("Enter number for sum: "))
+sum = 0
+for n in range (0, N+1, N-1):
+    sum = sum + n
+print("Sum of all numbers is: ", sum)
