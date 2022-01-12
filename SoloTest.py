@@ -43,12 +43,17 @@
 #     print(line[0] + str(ch))
 # file.close()
 
+
+#Fibonacci sequence
 num = int(input("Enter number for fib: "))
 
-def fib(n):
-    for n in range (0, n+1, 1):
-        sum = n
+def fib(x):
+    if x <= 0:
+        return 0 
+    elif x ==1:
+        return 1
+    else:
+        return fib(x-1) + fib(x-2)
 
-        print(sum)
-        
-fib(num)
+for x in range(num):
+    print(fib(x))
