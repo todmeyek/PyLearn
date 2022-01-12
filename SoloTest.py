@@ -48,7 +48,7 @@ num = int(input("Enter number for fib: "))
 def fib(n):
     for n in range (0, n+1, 1):
         sum = n
-        
-        print(sum)
 
+        print(sum)
+        
 fib(num)
